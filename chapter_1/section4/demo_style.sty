@@ -1,0 +1,10 @@
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{demo_style}[2018/11/11]
+\DeclareOption*{\PackageWarning{demo_style}{Unknown option '\CurrentOption'}}
+\ProcessOptions\relax
+\RequirePackage{fontspec} %
+\setmainfont{CMU Serif}
+
+\RequirePackage[list=off]{bicaption}% package for binary captions
+\captionsetup[figure][bi-second]{name=Figure}% the second figure caption name
+\captionsetup[table][bi-second]{name=Table}% the second table caption name
