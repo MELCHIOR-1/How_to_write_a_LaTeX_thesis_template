@@ -1,0 +1,10 @@
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{demo_style}[2018/11/11]
+\DeclareOption*{\PackageWarning{demo_style}{Unknown option '\CurrentOption'}}
+\ProcessOptions\relax
+\RequirePackage{graphicx}
+\RequirePackage[colorlinks=true,linkcolor=black]{hyperref} 
+\RequirePackage{cleveref}
+\crefname{equation}{式}{式}
+\crefname{table}{表}{表}
+\crefname{figure}{图}{图}

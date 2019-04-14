@@ -1,0 +1,20 @@
+\documentclass[11pt]{article}
+\usepackage{cleveref}
+\begin{document} 
+\begin{equation}
+	y=a_1x+b_1\label{eqn:1}
+\end{equation} 
+
+Cleveref equation reference (\textbackslash cref): \cref{eqn:1}.
+
+\Cref{eqn:1} is  a normal linear equation.
+\begin{figure}[ht]
+	\centering
+	\rule{0.5\linewidth}{0.1\linewidth}
+	\caption{First figure}\label{fig:1}
+\end{figure}
+
+Cleveref figure reference (\textbackslash cref): \cref{fig:1}.
+
+\Cref{fig:1} is just a black rectangle.
+\end{document}
